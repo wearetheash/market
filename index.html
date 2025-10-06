@@ -69,13 +69,17 @@ ke<!DOCTYPE html>
       margin-bottom: 15px;
     }
 
-    footer {
+  footer {
+  position: fixed;       /* Sayfanın altına sabitler */
+  bottom: 0;             /* En alt kısma hizalar */
+  left: 0;               /* Sol kenardan başlatır */
+  width: 100%;           /* Tam genişlik */
   text-align: center;
   background-color: #111;
   color: white;
   padding: 15px;
   font-size: 14px;
-  width: 100%;
+  z-index: 1000;         /* Diğer elemanların üstünde kalmasını sağlar */
 }
   </style>
 </head>
