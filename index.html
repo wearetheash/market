@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ke<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
@@ -51,10 +51,12 @@
     }
 
     .product img {
-      width: 100%;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-    }
+  width: 100%;               /* Container'ın genişliğine uyum sağlar */
+  height: 200px;             /* Sabit yükseklik, tümü aynı boyutta */
+  object-fit: cover;         /* Görseli kırpmadan container’a sığdırır */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
 
     .product h3 {
       margin: 10px 0 5px;
@@ -68,12 +70,13 @@
     }
 
     footer {
-      text-align: center;
-      background-color: #111;
-      color: white;
-      padding: 15px;
-      font-size: 14px;
-    }
+  text-align: center;
+  background-color: #111;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  width: 100%;
+}
   </style>
 </head>
 <body>
@@ -90,8 +93,8 @@
 </div>
 
 <div class="product">
-  <img src="https://cdn.pixabay.com/photo/2017/01/20/15/06/orange-1995056_1280.jpg" alt="Portakal">
-  <h3>Portakal (1 kg)</h3>
+  <img src="ekmek.jpg" alt="Ekmek">
+  <h3>Ekmek</h3>
   <p>₺19.90</p>
 </div>
 
@@ -108,9 +111,9 @@
 </div>
 
 <div class="product">
-  <img src="https://cdn.pixabay.com/photo/2015/07/17/12/26/coffee-849373_1280.jpg" alt="Kahve">
+  <img src="sut.jpg" alt="Süt">
   <h3>Filtre Kahve (250 g)</h3>
-  <p>₺89.90</p>
+  <p>₺39.90</p>
 </div>
   <footer>
     © 2025 Marketim - Gösterimlik Site
